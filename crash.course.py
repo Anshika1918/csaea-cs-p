@@ -164,3 +164,9 @@ else:
     words[1]="Word 5"
     length = len(words)
     print(words)
+
+
+    for i in range(10, 0, -3): print(i) 
+
+
+    

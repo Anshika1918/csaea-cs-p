@@ -1,0 +1,43 @@
+def main():
+    print("Welcome to Math Helper")
+    print("What would you like help with?")
+    print("1. Tip Calculator")
+    print("2. Temperature Converter")
+    choice = input("Enter your choice (1 or 2): ")
+    if choice == "1":
+        tip_calculator()
+    elif choice == "2":
+        temperature_converter();
+    else:
+        print("Invalid choice")
+
+def tip_calculator():
+    try:
+        bill = float(input("Total Bill ? $"))
+        tip = float(input("What percentage ? "))
+        if bill<=0 or tip <0:
+            print("enter value greater than 0")
+            return
+
+        tip_amount=bill*(tip/100)
+        total_bill = bill+tip_amount
+
+        print("\nFinal amout in breakdown")
+        print(f"Original Bill ${bill:.2f}")
+        print(f"Total tip ${tip_amount:.2f}")
+        print(f"Total Bill ${total_bill:.2f}")
+        print(f"Total Bill ${total_bill:.2f} is the final amount to pay")
+    except ValueError:
+        print("Invalid")
+      
+if __name__=="__main__":
+    main()
+
+
+def temperature_converter():
+    try:
+        F=float(input("Enter temperature in Fahrenheit: "))
+        C=(F-32)*5/9
+        print(f"{C} is temperature converted to celsius"  )
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
