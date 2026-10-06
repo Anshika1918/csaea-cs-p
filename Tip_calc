@@ -30,8 +30,6 @@ def tip_calculator():
     except ValueError:
         print("Invalid")
       
-if __name__=="__main__":
-    main()
 
 
 def temperature_converter():
@@ -41,3 +39,13 @@ def temperature_converter():
         print(f"{C} is temperature converted to celsius"  )
     except ValueError:
         print("Invalid input. Please enter a valid number.")
+
+if __name__=="__main__":
+         main()
+
+
+
+password= "csaea2026"
+attempt= "csaea2026"
+if attempt: "CSAEA2026"
+print("Ac") 
